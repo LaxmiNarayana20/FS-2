@@ -1,0 +1,5 @@
+y=np.array([3,5,7,9,11])
+model=LinearRegression()
+model.fit(X,y)
+prediction = model.predict([[6]])
+print("predicted salary for 6 years for experience :",prediction[0])
