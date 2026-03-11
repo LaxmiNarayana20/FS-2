@@ -24,7 +24,10 @@ jobs:
         run: pytest
 
       - name: Build Docker Image
-        run: docker build -t ml-ci-app. 
+        run: docker build -t ml-devops-demo. 
 
       - name: Run Docker COntainer
-        run: docer run ml-ci-app  
+        run: docer run ml-devops-demo
+        
+      - name: Deploy Container
+        run: docker run ml-devops-demo  

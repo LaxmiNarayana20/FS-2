@@ -5,12 +5,12 @@ y=np.array([2,4,6,8])
 def test_coefficient():
     model=LinearRegression()
     model.fit(x,y)
-    assert round(model.coef_[0],2)== 2.0
+    assert round(model.coef_[0], 2) == 2.0
 
 def test_intercept():
     model=LinearRegression()
     model.fit(x,y)
-    assert round(model.intercept_,2)==0.0
+    assert round(model.intercept_, 2)==0.0
 
 def test_prediction():
     model=LinearRegression()
