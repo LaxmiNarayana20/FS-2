@@ -13,7 +13,8 @@ jobs:
          
       - name: Install Dependencies
         run: pip install -r requirements.txt  
-             pip install pytest
+            
 
-      - name: Run Tests
-        run: pytest     
+      - name: Run scripts
+        run: python test_model.py
+             
